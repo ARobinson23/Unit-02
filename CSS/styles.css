@@ -1,0 +1,28 @@
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+    background-color: blue;
+}
+
+
+
+
+.top-header {
+    background-color: grey;
+}
+
+
+
+.middle-main {
+    background-color: honeydew;
+    line-height: 1.6;
+    color: black;
+}
+
+.bottom-footer {
+    padding: 1em 1em;
+}
