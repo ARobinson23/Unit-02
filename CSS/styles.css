@@ -1,28 +1,160 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
 }
 
 a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+font-size: 1em;
+}
+
+/* Base Layout Styles */
+
+.name {
+    margin: 0;
+    font-size: 1.25em;
+    
+}
+.main-nav {
+    margin-top: 0;
+    
+
+}
+.name a,
+.main-nav a {
+    text-align: center;
     display: block;
-    background-color: blue;
-}
-
-
-
-
-.top-header {
-    background-color: grey;
-}
-
-
-
-.middle-main {
-    background-color: honeydew;
-    line-height: 1.6;
+    padding: 25px;
     color: black;
+    font-size: 1em;
+    margin: auto;
 }
 
-.bottom-footer {
-    padding: 1em 1em;
+.main-nav a:hover {
+    color: grey;
+}
+
+.name a:hover {
+    color: grey;
+}
+
+.banner {
+    background-color: #D3D3D3;
+    margin-bottom: 50px;
+    padding: auto;
+    max-width: auto;
+    display: inline;
+}
+
+.banner p {
+    color: black;
+    background-color: white;
+    display: block;
+    padding-left: 25px;
+    margin: auto 0;
+
+}
+
+.logo {
+    float: right;
+    background-repeat: no-repeat;
+    padding-right: 25px;
+    margin-bottom: 50px;
+    margin-left: 1em;
+}
+
+.col {
+    background-color: white;
+    padding: 25px;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+    .name {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
+
+.col {
+    text-align: center;
+    margin-top: 200px;
+    max-width: 100%;
+    
+}
+
+.col-1 {
+    float: left;
+    
+}
+
+.col-2 {
+    float: right;
+    
+}
+
+.col-3 {
+    float: left;
+    
+}
+
+.col-4 {
+    float: right;
+    
+}
+
+.col-5 {
+    float: left;
+    
+}
+
+.col-6 {
+    float: right;
+    
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6 {
+    width: 50%;
+    padding: 1em;
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+
+/* Clear fix */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
