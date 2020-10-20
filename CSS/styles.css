@@ -8,9 +8,7 @@ a {
     text-decoration: none;
 }
 
-li {
-    list-style-type: none;
-}
+
 
 img {
     max-width: 100%;
@@ -26,25 +24,7 @@ font-size: 1em;
     margin: 0;
     font-size: 1.25em;
     
-}
-.main-nav {
-    margin-top: 0;
-    
 
-}
-.name a,
-.main-nav a {
-    text-align: center;
-    display: block;
-    padding: 25px;
-    color: black;
-    font-size: 1em;
-    margin: auto;
-}
-
-.main-nav a:hover {
-    color: grey;
-}
 
 .name a:hover {
     color: grey;
@@ -80,6 +60,10 @@ font-size: 1em;
     padding: 25px;
 }
 
+.contact {
+    text-align: center;
+}
+
 /* Media Queries */
 
 @media (min-width: 768px) {
@@ -88,15 +72,10 @@ font-size: 1em;
         float: left;
     }
 
-    .main-nav {
-        float: right;
-    }
+   
 
-    .main-nav li {
-        display: inline-block;
-        margin-left: 10px;
-    }
-}
+
+
 
 .col {
     text-align: center;
@@ -146,6 +125,11 @@ font-size: 1em;
 
 }
 
+.contact {
+    text-align: center;
+}
+
+}
 @media (min-width: 1024px) {
 
 }
