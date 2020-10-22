@@ -1,139 +1,107 @@
+/* Universal */
 
 * {
     box-sizing: border-box;
-    font-family: 'Varela Round', sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-
-img {
-    max-width: 100%;
-}
-
-p {
-font-size: 1em;
-}
-
-/* Base Layout Styles */
-
-.name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    font-size: 1.25em;
-    
-
-
-.name a:hover {
-    color: grey;
+    padding: 0;
 }
 
-.banner {
-    background-color: #D3D3D3;
-    margin-bottom: 50px;
-    padding: auto;
-    max-width: auto;
-    display: inline;
+li {
+    list-style-type: none;
 }
 
-.banner p {
-    color: black;
-    background-color: white;
-    display: block;
-    padding-left: 25px;
-    margin: auto 0;
+/* Header */
 
+    .main-header {
+     text-align: center;
+     background-color: #f8f8f8;
+     padding: .5em;
+ }
+
+    .name {
+    margin: .5em 0;
 }
 
-.logo {
-    float: right;
-    background-repeat: no-repeat;
-    padding-right: 25px;
-    margin-bottom: 50px;
-    margin-left: 1em;
-}
+    .main-nav a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        padding: .5em;
+        text-transform: uppercase;
+        margin: .5em;
+        font-weight: bold;
+    }
 
-.col {
-    background-color: white;
-    padding: 25px;
-}
+    .main-nav li {
+        list-style: none;
+        background-color: white;
+    }
 
-.contact {
-    text-align: center;
-}
+    .porfolio-picture {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        
+    }
+
+
+
+
+
+
+
+
+
+
 
 /* Media Queries */
 
 @media (min-width: 768px) {
 
-    .name {
-        float: left;
+  .main-header {
+      text-align: center;
+  }
+
+  .name {
+    margin: .5em 0;
     }
 
-   
-
-
-
-
-.col {
-    text-align: center;
-    margin-top: 200px;
-    max-width: 100%;
-    
+    .main-nav {
+        margin-bottom: 3em;
+    }
+    .main-nav li {
+        background: none;
+        float: left;
+    }
 }
 
-.col-1 {
-    float: left;
-    
-}
 
-.col-2 {
-    float: right;
-    
-}
 
-.col-3 {
-    float: left;
-    
-}
 
-.col-4 {
-    float: right;
-    
-}
 
-.col-5 {
-    float: left;
-    
-}
 
-.col-6 {
-    float: right;
-    
-}
 
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6 {
-    width: 50%;
-    padding: 1em;
 
-}
 
-.contact {
-    text-align: center;
-}
 
-}
+
+
+
 @media (min-width: 1024px) {
+    .name {
+        float: left;
+        padding-left: .5em;
+    }
 
+    .main-nav {
+        float: right;
+        padding-right: .5em;
+    }
+
+    .porfolio-picture {
+        float: right;
+    }
 }
-
 
 /* Clear fix */
 
